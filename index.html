@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title> Conversor de Temperatura </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Conversor de Temperatura </title>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -16,35 +17,19 @@
                     <td> <input type="text" name="val1" id="val1"> </td>
                     <td> 
                         <select name="operacao" id="operacao">
-                            <option value="CF"> Celsius p/ Fahrenheit </option>
-                            <option value="CK"> Celsius p/ Kelvin </option>
-                            <option value="FC"> Fahrenheit p/ Celsius </option>
-                            <option value="FK"> Fahrenheit p/ Kelvin </option>
-                            <option value="KC"> Kelvin p/ Celsius </option>
-                            <option value="KF"> Kelvin p/ Fahrenheit </option>
-                            
+                            <option value="CF"> Celsius p/ Fahrenheit  </option>
+                            <option value="CK"> Celsius p/ Kelvin      </option>
+                            <option value="FC"> Fahrenheit p/ Celsius  </option>
+                            <option value="FK"> Fahrenheit p/ Kelvin   </option>
+                            <option value="KC"> Kelvin p/ Celsius      </option>
+                            <option value="KF"> Kelvin p/ Fahrenheit   </option>
                         </select> 
                     </td>
-
-                    <td> <input type="button" value="=" onclick="calculator();" name=""> </td>
-                    <td> <input type="text" name="val1" id='result'> </td>
+                    <td> <input type="button" value="=" onclick="calculator();" name=""></td>
+                    <td> <input type="text" name="val1" id='result'></td>
                 </tr>
             </table>
         </form>
-
-        <script type="text/javascript">
-            function calculator(){
-                let val1   = parseInt(document.getElementById("val1").value);
-                let operacao  = document.getElementById("operacao").value;
-                let result = document.getElementById("result");
-
-                if(operacao == "CF")    result.value = (val1 *  9)/5 + 32;          // C para F
-                if(operacao == "CK")    result.value = (val1 + 273.15);                // C para K
-                if(operacao == "FC")    result.value = (val1 - 32) * 5/9;              // F para C
-                if(operacao == "FK")    result.value = (val1 - 32) * 5/9 + 273.15;  // F para K
-                if(operacao == "KC")    result.value = (val1 - 273.15);                 // K para C
-                if(operacao == "KF")    result.value = (val1 - 273.15) * 9/5 + 32;  // K para F
-                }
-        </script>
+        <script> </script>
     </body>
 </html>
