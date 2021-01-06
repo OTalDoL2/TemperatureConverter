@@ -5,18 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
-        <form>
+        <form class="form-allign">
             <table border="0">
                 <tr>
-                    <th colspan="5"> Conversor de Temperatura </th>
+                    <th colspan="5" class="conv"> Conversor de Temperatura </th>
                 </tr>
-                <tr>
-                    <td> <input type="text" name="val1" id="val1"> </td>
-                    <td> 
+
+                <tr class="s">
+                    <td >
                         <select name="operacao" id="operacao">
+                            <option value="select"> Selecione para Converter </option>
                             <option value="CF"> Celsius p/ Fahrenheit  </option>
                             <option value="CK"> Celsius p/ Kelvin      </option>
                             <option value="FC"> Fahrenheit p/ Celsius  </option>
@@ -25,8 +28,17 @@
                             <option value="KF"> Kelvin p/ Fahrenheit   </option>
                         </select> 
                     </td>
+                </tr>
+                
+                
+
+                <tr>
+                    <td> <input type="text" name="val1" id="val1"> </td>
                     <td> <input type="button" value="=" onclick="calculator();" name=""></td>
                     <td> <input type="text" name="val1" id='result'></td>
+                    
+                    
+
                 </tr>
             </table>
         </form>

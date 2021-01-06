@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(16, 16, 104);
+    color: white;
+}
+
+.conv{
+    font-size: 30px;
+    
+}
+
+.form-allign{ /*cima direita baixo esquerda  */
+    margin-left: 650px;
+}
+
+
+
